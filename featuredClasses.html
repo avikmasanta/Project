@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal training</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* footer */
+        footer {
+            background-color: #d7eff9;
+            color: #000000;
+            padding: 50px 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer_blocks {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .footer_box {
+            flex: 0 0 calc(25% - 20px);
+            max-width: calc(25% - 20px);
+            margin-bottom: 30px;
+        }
+
+        .footer_box h4 {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .footer_box p {
+            margin-bottom: 10px;
+        }
+
+        .footer_links a {
+            color: #2703dd;
+            display: block;
+            margin-bottom: 8px;
+            transition: color 0.3s ease;
+            text-decoration: none;
+        }
+
+        .footer_links a:hover {
+            color: #13235e;
+        }
+
+        .footer_links a i {
+            margin-right: 5px;
+        }
+
+        .socials a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: #fff;
+            color: #333;
+            font-size: 20px;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 50%;
+            margin-right: 10px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .socials a:hover {
+            background-color: #128c7e;
+            color: #0e0d0d;
+        }
+
+        .rights {
+            font-size: 1.1rem;
+            text-align: center;
+            margin-top: 30px;
+            text-decoration: none;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .footer_box {
+                flex: 0 0 calc(33.333% - 20px);
+                max-width: calc(33.333% - 20px);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .footer_box {
+                flex: 0 0 calc(50% - 20px);
+                max-width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 576px) {
+            .footer_box {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <div class="navbar-brand" href="#">
+                <a href="" style="font-size: 2.5rem;">
+                    Waves Gym
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-sm-0 nav-items ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Features
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="">Personal Trainer</a></li>
+                            <li><a class="dropdown-item" href="">Start your Fitness Journey</a></li>
+                            <li><a class="dropdown-item" href="">1 on 1 online Program</a></li>
+                            <li><a class="dropdown-item" href="https://userdetails-hw5q.onrender.com/">Become a
+                                    Trainer</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Life Style
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="FrontEnd/bmi.html">BMI Tracker</a></li>
+                            <li><a class="dropdown-item" href="FrontEnd/calorie.html">calorie Tracker</a></li>
+                            <li><a class="dropdown-item" href="https://fitnesstracker-rzbu.onrender.com">HabiT
+                                    Tracker</a></li>
+                            <li><a class="dropdown-item" href="">Diet Plan</a></li>
+                            <li><a class="dropdown-item" href="">Join Community</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Gym Pass
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://gymmembersdetails-backend-1.onrender.com">Regular
+                                    Pass</a></li>
+                            <li><a class="dropdown-item" href="FrontEnd/emailOtp.html">1 day Free Trial</a></li>
+                            <li><a class="dropdown-item" href="FrontEnd/Query.html">Query ?</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Know More
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="">About Us</a></li>
+                            <li><a class="dropdown-item" href="https://userdetails-hw5q.onrender.com/">Contact Us</a>
+                            </li>
+                            <li><a class="dropdown-item" href="">Trainers</a></li>
+                            <li><a class="dropdown-item" href="">Feedback</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </div>
+
+    <div class="container-fluid section1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-12 order-lg-1 order-md-1 order-2">
+                    <div class="details" id="home">
+                        <h4 class="head2"><b>Discover Personalised Fitness</b></h4>
+                        <h4 class="head2"><b>at WAVES GYM</b></h4>
+
+                        <p class="para1">Your fitness journey is unique. That’s why at Waves Gym, our internationally
+                            certified trainers craft a personal training program tailored just for you. Accelerate your
+                            fitness and weight loss goals with our expert blend of cardio, strength training, and the
+                            latest in fitness technology.</p>
+                        <p class="para1"><b>Why Choose Waves Gym Personal Trainers?</b>
+                            <br>
+                            <em> Workouts: </em>Tailored exercise routines to fit your individual needs.
+                            <br>
+                            <b>Specialized Programs:</b> Our trainers are skilled in Special Population Training,
+                            offering services for diverse fitness needs.
+                        </p>
+                        <a href="https://userdetails-hw5q.onrender.com/">
+                        <button class="btn2">Join Today</button></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12 order-lg-2 order-md-2 order-1">
+                    <div class="imgheader">
+                        <img class="imgs2" src="../images/one.jpg" alt="header" style="margin-top:120px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="margin-bottom: 40px;">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="details3" id="class">
+                    <h1 class="head4">Our Classes</h1>
+                    <p class="para2">Discover a diverse range of exhilarating classes at our gym designed to cater to
+                        all fitness
+                        levels and interests. Whether you're a seasoned athlete or just starting your fitness journey,
+                        our classes
+                        offer something for everyone.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card">
+                    <img class="imgs11" src="../images/strength.jpg" alt="">
+                    <div class="useage">
+                        <h4 class="head5">Strength Training</h4>
+                        <h6 class="head5">Resistance Training</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card">
+                    <img src="../images/flexibility.jpg" alt="">
+                    <div class="useage">
+                        <h4 class="head5">Flexibility</h4>
+                        <h6 class="head5">Yoga & Pilates</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card">
+                    <img src="../images/circuit.jpg" alt="">
+                    <div class="useage">
+                        <h4 class="head5">HIIT</h4>
+                        <h6 class="head5">Circuit Training</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card">
+                    <img src="../images/groupfit.jpg" alt="">
+                    <div class="useage">
+                        <h4 class="head5">Group Fitness</h4>
+                        <h6 class="head5">Zumba Class</h6>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer_blocks">
+                <div class="footer_box">
+                    <h4>Get In Touch</h4>
+                    <p><i class="fa fa-map-marker-alt"></i>India</p>
+                    <p><i class="fa fa-phone-alt"></i>+91 8670226518</p>
+                    <p><i class="fa fa-envelope"></i> soumyadipojha635@gmail.com</p>
+                    <p><i class="fa fa-envelope"></i> imshruti470@gmail.com</p>
+                    <div class="socials">
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer_box">
+                    <h4>Quick Links</h4>
+                    <div class="footer_links">
+                        <a href="./index.html"><i class="fa fa-angle-right"></i>Home</a>
+                        <a href=""><i class="fa fa-angle-right"></i>About Us</a>
+                        <a href=""><i class="fa fa-angle-right"></i>Our Features</a>
+                        <a href=""><i class="fa fa-angle-right"></i>Classes</a>
+                        <a href=""><i class="fa fa-angle-right"></i>Contact Us</a>
+                    </div>
+                </div>
+
+                <div class="footer_box">
+                    <h4>Popular Links</h4>
+                    <div class="footer_links">
+                        <a href="./index.html"><i class="fa fa-angle-right"></i>Home</a>
+                        <a href=""><i class="fa fa-angle-right"></i>About Us</a>
+                        <a href=""><i class="fa fa-angle-right"></i>Our Features</a>
+                        <a href=""><i class="fa fa-angle-right"></i>Classes</a>
+                        <a href=""><i class="fa fa-angle-right"></i>Contact Us</a>
+                    </div>
+                </div>
+
+                <div class="footer_box">
+                    <h4>Opening hours</h4>
+                    <h5>Monday - Friday</h5>
+                    <p class="time">8.00 AM - 8.00 PM</p>
+                    <h5>Saturday - Sunday</h5>
+                    <p class="time">2.00 PM - 8.00 PM</p>
+                </div>
+            </div>
+            <p class="rights">
+                <b> © WavesGym</b>. All Rights Reserved. Designed with 🩷 by
+                <a target="_blank" href="https://www.linkedin.com/in/soumyadip-ojha">Soumyadip Ojha</a> &
+                <a target="_blank" href="https://www.linkedin.com/in/shrutimishra30/">Shruti Mishra</a>
+            </p>
+        </div>
+    </footer>
+    <!-- wp -->
+</body>
+<script>
+</script>
+
+</html>
